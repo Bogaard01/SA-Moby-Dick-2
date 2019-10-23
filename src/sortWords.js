@@ -1,8 +1,7 @@
 const _ = require("lodash");
 
-const sort = textJSON => {
-  var resultArray = [];
-
+const sort = textArray => {
+  var resultArray = _.takeRight(_.sortBy(textArray, ["count"]), 100);
   return resultArray;
 };
 

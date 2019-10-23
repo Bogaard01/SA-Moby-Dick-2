@@ -1,6 +1,7 @@
 const fileReader = require("./fileReader.js");
 const compare = require("./compare.js");
 const countWords = require("./countWords.js");
+const sortWords = require("./sortWords.js");
 
 describe("Tests for index js file", () => {
   //  it("Red test 1. Make sure test framework returns failure.", () => {
@@ -20,7 +21,9 @@ describe("Tests for index js file", () => {
     var stopArray = fileReader.read("../data/stop-words.txt", /\#.*|\W?\s/);
     var resultArray = compare.removeStopWords(mobyArray, stopArray);
     var countedObj = countWords.count(resultArray);
-    expect(countedObj).toEqual([{}, {}]);
+    var sorted100Words = sortWords.sort(countedObj);
+    console.log(sorted100Words);
+    expect(sorted100Words.length).toEqual(100);
   });
   */
 });
