@@ -5,8 +5,9 @@ describe("Tests for compare arrays function", () => {
     const testArray1 = ["Moby", "Dick", "test", "seven", "and"];
     const testArray2 = ["Dick", "test", "other", "words"];
     const resultArray1 = ["Moby", "seven", "and"];
-    expect(compare.removeStopWords([testArray1, testArray2])).toEqual(
+    expect(compare.removeStopWords(testArray1, testArray2)).toEqual(
       expect.arrayContaining(resultArray1)
     );
+    console.log(compare.removeStopWords(testArray1, testArray2));
   });
 });
