@@ -18,8 +18,11 @@ describe("Tests for file reader", () => {
   it("stop-words.txt read and returned as array of words.", () => {
     //console.log(fileReader.read("stop-words.txt"));
     const testArray1 = ["about", "did", "you"];
-    expect(fileReader.read("stop-words.txt", /\#.*|\W?\s/)).toEqual(
-      expect.arrayContaining(testArray1)
-    );
+    expect(
+      fileReader.read("stop-words.txt", /\#.*|\W?\s|(?<!.).{1}(?=\n)/)
+    ).toEqual(expect.arrayContaining(testArray1));
+    //console.log(
+    //  fileReader.read("stop-words.txt", /\#.*|\W?\s|(?<!.).{1}(?=\n)/)
+    //);
   });
 });

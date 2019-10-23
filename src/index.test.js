@@ -18,7 +18,10 @@ describe("Tests for index js file", () => {
   /*
   it("Test getting an array of counted word objects", () => {
     var mobyArray = fileReader.read("../data/mobydick.txt", /\#.*|\W?\s/);
-    var stopArray = fileReader.read("../data/stop-words.txt", /\#.*|\W?\s/);
+    var stopArray = fileReader.read(
+      "../data/stop-words.txt",
+      /\#.*|\W?\s|(?<!.).{1}(?=\n)/
+    );
     var resultArray = compare.removeStopWords(mobyArray, stopArray);
     var countedObj = countWords.count(resultArray);
     var sorted100Words = sortWords.sort(countedObj);
