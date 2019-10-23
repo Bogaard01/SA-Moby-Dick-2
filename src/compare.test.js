@@ -8,6 +8,6 @@ describe("Tests for compare arrays function", () => {
     expect(compare.removeStopWords(testArray1, testArray2)).toEqual(
       expect.arrayContaining(resultArray1)
     );
-    console.log(compare.removeStopWords(testArray1, testArray2));
+    //console.log(compare.removeStopWords(testArray1, testArray2));3
   });
 });
