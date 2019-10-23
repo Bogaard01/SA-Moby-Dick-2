@@ -1,4 +1,5 @@
-Moby Dick thoughts
+Moby Dick thoughts:
+
 Get a txt reader function to parse as an array.
 Maybe JSON with array of arrays for line and words on line. Nope, don’t need line number. Just use array of words
 Initially parse on space. Then go back and refine to take out period, comma, question mark, etc.
