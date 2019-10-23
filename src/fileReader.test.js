@@ -11,7 +11,7 @@ describe("Tests for file reader", () => {
     const testArray1 = [
       "public domain works in creating the Project Gutenberg-tm collection"
     ];
-    expect(fileReader.read("mobydick.txt", /\#.*|\W?\s/)).toEqual(
+    expect(fileReader.read("mobydick.txt", /[^a-zA-Z0-9_'-]|\s/)).toEqual(
       expect.not.arrayContaining(testArray1)
     );
   });

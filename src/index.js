@@ -3,7 +3,7 @@ const compare = require("./compare.js");
 const countWords = require("./countWords.js");
 const sortWords = require("./sortWords.js");
 
-var mobyArray = fileReader.read("../data/mobydick.txt", /\#.*|\W?\s/);
+var mobyArray = fileReader.read("../data/mobydick.txt", /[^a-zA-Z0-9_'-]|\s/);
 var stopArray = fileReader.read(
   "../data/stop-words.txt",
   /\#.*|\W?\s|(?<!.).{1}(?=\n)/
