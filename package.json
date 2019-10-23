@@ -1,0 +1,25 @@
+{
+  "name": "sa-moby-dick-2",
+  "version": "1.0.0",
+  "description": "Moby Dick top 100 word count.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bogaard01/SA-Moby-Dick-2.git"
+  },
+  "keywords": [
+    "Moby",
+    "Dick",
+    "Word",
+    "Count"
+  ],
+  "author": "John Bogaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bogaard01/SA-Moby-Dick-2/issues"
+  },
+  "homepage": "https://github.com/Bogaard01/SA-Moby-Dick-2#readme"
+}

@@ -14,4 +14,4 @@ Function to count words: return JSON; object holding array of objects...or just 
 
 Function to sort the JSON by use count.
 
-Spin through 100 times and output.
+Drop element 100+ and display remaining.
