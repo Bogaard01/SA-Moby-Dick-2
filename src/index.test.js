@@ -21,7 +21,7 @@ describe("Tests for index js file", () => {
   it("Test getting an array of counted word objects", () => {
     var mobyArray = fileReader.read(
       "../data/mobydick.txt",
-      /[^a-zA-Z0-9\_\’\'\-]|\s/
+      /[^a-zA-Z0-9\_\'\-\’]|(?<!\w)’|\s/
     );
     var stopArray = fileReader.read(
       "../data/stop-words.txt",
