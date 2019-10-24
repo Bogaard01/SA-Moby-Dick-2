@@ -15,11 +15,13 @@ describe("Tests for index js file", () => {
   //It is 200,000 records, but that seems to be a long time.
   //while loop is probably not the best structure. But I've got it working now.
   //Disabling test while I refine so Jest doesn't keep running it.
-
+  //Lots of code below is pretty much the index.js file. I was using Jest's --watchAll
+  //feature to assemble index.js here and test after every save.
+  /*
   it("Test getting an array of counted word objects", () => {
     var mobyArray = fileReader.read(
       "../data/mobydick.txt",
-      /[^a-zA-Z0-9_'-]|\s/
+      /[^a-zA-Z0-9\_\’\'\-]|\s/
     );
     var stopArray = fileReader.read(
       "../data/stop-words.txt",
@@ -28,7 +30,8 @@ describe("Tests for index js file", () => {
     var resultArray = compare.removeStopWords(mobyArray, stopArray);
     var countedObj = countWords.count(resultArray);
     var sorted100Words = sortWords.sort(countedObj);
-    console.log(sorted100Words);
+    //console.log(sorted100Words);
     expect(sorted100Words.length).toEqual(100);
   });
+  */
 });
