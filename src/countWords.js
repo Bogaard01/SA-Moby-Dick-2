@@ -17,6 +17,7 @@ const count = textArray => {
   //Goal to have old array mutated to remove head and any matches.
   //And have function return new array of same words.
   //Store that word and a newWordArry.length in the object.
+  //Idea for future improvement. Try sorting the array first to improve performance.
 };
 
 module.exports = { count };

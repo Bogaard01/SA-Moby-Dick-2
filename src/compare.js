@@ -12,7 +12,7 @@ const removeStopWords = (textArray, stopArray) => {
   var properCaseArray = _.map(resultArray, o => {
     return _.capitalize(o);
   });
-  return properCaseArray;
+  return properCaseArray; //returning capitalized words for a better display.
 };
 
 module.exports = { removeStopWords };
