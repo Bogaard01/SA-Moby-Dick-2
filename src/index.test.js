@@ -4,6 +4,8 @@ const countWords = require("./countWords.js");
 const sortWords = require("./sortWords.js");
 
 describe("Tests for index js file", () => {
+  //Red test 1 and Green test 1 were created at the start of the project
+  //to make sure I had Jest set up and running correctly.
   //  it("Red test 1. Make sure test framework returns failure.", () => {
   //    expect(3).toEqual(2);
   //  });
